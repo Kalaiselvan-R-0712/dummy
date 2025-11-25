@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dashboard — Stackly Luxury Event Management</title>
+<title>Contact Us — Stackly Digital Marketing Agency</title>
 <meta name="description" content="Discover Stackly's story, values and team. Luxury event management crafted with passion and precision." />
 <!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -325,10 +325,159 @@ footer a:hover {
   }
 }
 
+
+/* ---------------- OUR VALUES ---------------- */
+.values-section{
+  max-width:1250px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.values-section h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:25px;
+}
+
+.value-card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  transition:0.3s;
+}
+
+.value-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.value-card h3{
+  margin-bottom:10px;
+  font-size:20px;
+  font-weight:600;
+}
+.value-card p{ opacity:0.8; }
+
+
+/* ---------------- HERO ---------------- */
+.about-hero{
+  margin-top:100px;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.about-hero h1{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.about-hero p{
+  font-size:18px;
+  opacity:0.8;
+}
+
+/* ---------------- ABOUT CONTENT ---------------- */
+.about-section{
+  max-width:1250px;
+  margin:60px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about-section img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.about-text h2{
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.about-text p{
+  font-size:16px;
+  opacity:0.85;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+
+
+
+.highlight-box{
+  background:#f0f5ff;
+  padding:25px;
+  border-radius:12px;
+  border-left:5px solid #007bff;
+  margin-top:20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width:900px){
+
+  .nav-center, .nav-auth{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:250px;
+    height:100vh;
+    background:#ffffff;
+    flex-direction:column;
+    padding-top:120px;
+    gap:22px;
+    box-shadow:-3px 0 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+  }
+
+  .nav-center.active,
+  .nav-auth.active{
+    right:0;
+  }
+
+  .menu-btn{ display:block; }
+
+  .about-section{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+
 .contact-hero { margin-top:100px; text-align:center; padding:60px 20px; }
 .contact-hero h1 { font-size:42px; font-weight:700; margin-bottom:10px; }
 .contact-hero p { font-size:18px; opacity:0.8; }
 
+.contact-section { max-width:1250px; margin:60px auto; padding:0 20px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+.contact-form { background:#fff; padding:40px; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.contact-form h3 { font-size:24px; font-weight:700; margin-bottom:25px; text-align:center; }
+.contact-form label { display:block; font-weight:500; margin-bottom:6px; margin-top:15px; }
+.contact-form input, .contact-form textarea { width:100%; padding:12px 15px; border:1px solid #ccc; border-radius:10px; margin-bottom:10px; outline:none; transition:0.3s; }
+.contact-form input:focus, .contact-form textarea:focus { border-color:var(--gold-1); }
+.contact-form textarea { resize:none; min-height:140px; }
+
+.submit-btn { display:inline-block; background:linear-gradient(90deg,var(--gold-1),var(--gold-2)); color:#18181b; padding:12px 22px; border-radius:999px; font-weight:700; text-align:center; transition:0.2s; cursor:pointer; }
+.submit-btn:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(212,175,55,0.2); }
+
+/* Contact info */
+.contact-info { display:flex; flex-direction:column; gap:25px; }
+.contact-info div { background:var(--ivory); padding:25px; border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.06); }
+.contact-info div h4 { font-size:18px; font-weight:600; margin-bottom:8px; }
+.contact-info div p { font-size:16px; opacity:0.85; line-height:1.6; }
+
+/* Responsive */
+@media (max-width:1024px) { .contact-section { grid-template-columns:1fr; text-align:center; } .contact-info { flex-direction:row; flex-wrap:wrap; justify-content:center; gap:20px; } }
 </style>
 </head>
 
@@ -345,8 +494,8 @@ footer a:hover {
       <a href="about.html" class="text-gray-700 hover:text-[var(--accent)]">About</a>
       <a href="services.html" class="text-gray-700 hover:text-[var(--accent)]">Services</a>
       <a href="packages.html" class="text-gray-700 hover:text-[var(--accent)]">Packages</a>
-      <a href="contact.html" class="text-gray-700 hover:text-[var(--accent)]">Contact</a>
-      <a href="dashboard.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="page">Dashboard</a>
+      <a href="contact.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="page">Contact</a>
+      <a href="dashboard.html" class="text-gray-700 hover:text-[var(--accent)]">Dashboard</a>
       <a href="login.html" class="login-btn ml-2 hover:shadow-md">Login</a>
       <a href="register.html" class="register-btn ml-3">Register</a>
     </nav>
@@ -360,73 +509,69 @@ footer a:hover {
     <a href="about.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">About</a>
     <a href="services.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Services</a>
     <a href="packages.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Packages</a>
-    <a href="contact.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Contact</a>
-    <a href="dashboard.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="page">Dashboard</a>
+    <a href="contact.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="page">Contact</a>
+    <a href="dashboard.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Dashboard</a>
     <a href="login.html" class="block w-full max-w-xs mt-2 py-2 border rounded-full text-center login-btn mx-auto">Login</a>
     <a href="register.html" class="block w-full max-w-xs py-2 rounded-full text-center register-btn mx-auto">Register</a>
   </div>
 </header>
 
-<!-- HERO -->
-<div class="contact-hero">
-  <h1>Dashboard Overview</h1>
-  <p>Insights, analytics, and real-time event performance.</p>
-</div>
+<!-- ======= CONTACT HEADER TEXT (NO HERO IMAGE) ======= -->
+<section class="pt-32 pb-14 text-center px-6">
+  <h1 class="text-5xl font-bold mb-4">Contact Stackly</h1>
+  <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+    We’re here to support your digital growth. Reach out anytime — we’ll get back within 24 hours.
+  </p>
+</section>
 
-  <!-- MAIN CONTENT -->
-  <main class="px-5 max-w-7xl mx-auto pb-20">
+<!-- CONTACT SECTION -->
+<section class="contact-section">
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-      <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-yellow-500 text-center">
-        <p class="text-gray-500 text-sm">Total Bookings</p>
-        <h3 class="text-3xl font-bold mt-2">126</h3>
-        <p class="text-green-500 text-sm mt-1">+12% this month</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-yellow-500 text-center">
-        <p class="text-gray-500 text-sm">Completed Events</p>
-        <h3 class="text-3xl font-bold mt-2">89</h3>
-        <p class="text-blue-500 text-sm mt-1">4 pending</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-yellow-500 text-center">
-        <p class="text-gray-500 text-sm">Payments Received</p>
-        <h3 class="text-3xl font-bold mt-2">₹4,85,200</h3>
-        <p class="text-green-500 text-sm mt-1">+18% growth</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-yellow-500 text-center">
-        <p class="text-gray-500 text-sm">Customer Ratings</p>
-        <h3 class="text-3xl font-bold mt-2">4.8 ★</h3>
-        <p class="text-yellow-500 text-sm mt-1">Top Rated</p>
-      </div>
+  <!-- FORM -->
+  <form class="contact-form" onsubmit="handleSubmit(event)">
+    <h3>Send Us a Message</h3>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+    
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" placeholder="Subject" required>
+    
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    
+    <button type="submit" class="submit-btn mt-4">Send Message</button>
+  </form>
+
+
+
+    <!-- IMAGE -->
+    <div class="rounded-2xl overflow-hidden shadow-xl">
+      <img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="w-full h-full object-cover">
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10">
-      <div class="bg-white p-6 rounded-2xl shadow-md chart-container">
-        <h3 class="text-xl font-semibold mb-4">Monthly Booking Growth</h3>
-        <canvas id="bookingChart" class="w-full"></canvas>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md chart-container">
-        <h3 class="text-xl font-semibold mb-4">Revenue Report</h3>
-        <canvas id="revenueChart" class="w-full"></canvas>
-      </div>
-    </div>
+</section>
 
-    <div class="grid md:grid-cols-2 gap-10 mt-14">
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Current Status</h3>
-        <ul class="space-y-3 text-gray-700">
-          <li>✔ 3 Events happening today</li>
-          <li>✔ 12 Events this week</li>
-          <li>✔ All teams are active</li>
-          <li>✔ No delays or issues</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Performance Report</h3>
-        <p class="text-gray-600">Excellent ongoing performance and sustained growth over the past months.</p>
-        <p class="text-green-600 font-semibold mt-3">You are performing better than 92% of competitors.</p>
-      </div>
-    </div>
-  </main>
+
+<!-- ======= GOOGLE MAP ======= -->
+<section class="w-full mb-20">
+  <h2 class="text-3xl font-bold text-center mb-6">Find Us on Map</h2>
+
+  <div class="w-full max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-200">
+    <iframe
+      width="100%"
+      height="420"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=chennai%20tamil%20nadu&output=embed">
+    </iframe>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="bg-[#060507] dark:bg-[#050406] text-gray-300 pt-10 pb-8">
@@ -589,59 +734,16 @@ mobileHomeDropdownBtn.addEventListener('click', () => {
   mobileHomeDropdownBtn.querySelector('svg').classList.toggle('rotate-180');
 });
 </script>
+
 <script>
-function validateAndRedirect(event) {
+function toggleMenu(){
+  document.querySelector(".nav-center").classList.toggle("active");
+  document.querySelector(".nav-auth").classList.toggle("active");
+}
+function handleSubmit(event){
   event.preventDefault();
-  const form = event.target;
-  if (form.name.value && form.email.value && form.message.value) {
-    // If validation passes, redirect to 404.html
-    window.location.href = '404.html';
-    return false;
-  } else {
-    alert('Please fill in all required fields.');
-    return false;
-  }
+  window.location.href = "404.html"; // fake submission redirect
 }
 </script>
-  <script>
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileToggle.addEventListener('click', () => {
-      const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-      mobileToggle.setAttribute('aria-expanded', String(!expanded));
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    new Chart(document.getElementById("bookingChart"), {
-      type: "line",
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-        datasets: [{
-          label: "Bookings",
-          data: [15, 22, 35, 40, 48, 59],
-          borderColor: "#d4af37",
-          borderWidth: 3,
-          fill: false,
-          tension: 0.3
-        }]
-      }
-    });
-
-    new Chart(document.getElementById("revenueChart"), {
-      type: "bar",
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-        datasets: [{
-          label: "Revenue",
-          data: [45000, 52000, 62000, 70000, 88000, 96000],
-          backgroundColor: "#d4af37"
-        }]
-      }
-    });
-  </script>
 </body>
 </html>

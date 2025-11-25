@@ -604,7 +604,7 @@ a:hover { color: var(--accent); }
     gap: 30px;
   }
   .service-card {
-    width: 90%; /* cards take 90% of screen width */
+    width: 100%; /* cards take 90% of screen width */
     max-width: 400px; /* optional max width */
   }
 }
@@ -656,64 +656,101 @@ function toggleMenu(){
 </header>
 
 <!-- HERO -->
-<div class="services-hero">
-  <h1>Our Services</h1>
-  <p>We provide top-notch digital solutions that drive growth and performance.</p>
-</div>
+<section class="services-hero">
+  <h1 class="text-4xl font-bold">Our Premium Services</h1>
+  <p class="text-lg opacity-80 mt-2">
+    World-class digital marketing solutions crafted for high-growth brands.
+  </p>
+</section>
 
-<!-- SERVICES GRID -->
-<section class="services-section">
+<!-- NEW MODERN SERVICES SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-10">
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
-    </svg>
-    <h3>Search Engine Optimization</h3>
-    <p>Boost your website visibility and rank higher on Google with our expert SEO strategies.</p>
-  </div>
+  <div class="grid md:grid-cols-3 gap-10">
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18V3H3z" />
-    </svg>
-    <h3>Social Media Marketing</h3>
-    <p>Create powerful campaigns on Facebook, Instagram, LinkedIn, and Twitter to engage your audience.</p>
-  </div>
+    <!-- CARD 1 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">🚀</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">Performance Marketing</h3>
+      <p class="opacity-80 leading-relaxed">
+        Scale your business with data-driven ads across Google, Meta, YouTube & more. High ROI strategies designed for aggressive growth.
+      </p>
+    </div>
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-    </svg>
-    <h3>Paid Advertising</h3>
-    <p>Maximize ROI with targeted Google Ads, Meta Ads, and other paid campaigns with paid services.</p>
-  </div>
+    <!-- CARD 2 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">🎯</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">Social Media Management</h3>
+      <p class="opacity-80 leading-relaxed">
+        Unique content, viral campaigns & daily engagement across Instagram, Facebook & LinkedIn to build loyal brand communities.
+      </p>
+    </div>
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 .895-4 2s1.79 2 4 2 4-.895 4-2-1.79-2-4-2z" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-2.21 0-4 .895-4 2v2h8v-2c0-1.105-1.79-2-4-2z" />
-    </svg>
-    <h3>Branding & Design</h3>
-    <p>Craft compelling brand identities, logos, and visuals that resonate with your audience.</p>
-  </div>
+    <!-- CARD 3 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">📈</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">SEO & Organic Growth</h3>
+      <p class="opacity-80 leading-relaxed">
+        Rank higher on Google with on-page SEO, backlinks, technical optimization, audits & keyword-driven content strategies.
+      </p>
+    </div>
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-    </svg>
-    <h3>Marketing Automation</h3>
-    <p>Streamline your campaigns, emails, and customer journeys using advanced automation tools.</p>
-  </div>
+    <!-- CARD 4 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">🎨</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">Brand Identity & Design</h3>
+      <p class="opacity-80 leading-relaxed">
+        Modern logo design, brand guidelines, premium creatives & full visual identity systems for a stunning brand presence.
+      </p>
+    </div>
 
-  <div class="service-card">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6M12 3v4m-4 0h8" />
-    </svg>
-    <h3>Analytics & Growth</h3>
-    <p>Track, measure, and optimize your campaigns for sustainable business growth.</p>
+    <!-- CARD 5 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">🤖</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">Automation & CRM Workflows</h3>
+      <p class="opacity-80 leading-relaxed">
+        Automated funnels, email journeys, WhatsApp flows & CRM setups to maximize conversions effortlessly.
+      </p>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="service-card p-8 rounded-2xl shadow-lg bg-white hover:-translate-y-3 transition-all">
+      <div class="flex justify-center mb-4">
+        <span class="text-5xl">📊</span>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">Analytics & Reporting</h3>
+      <p class="opacity-80 leading-relaxed">
+        Deep insights, real-time dashboards, weekly performance breakdowns & growth recommendations for data-backed decisions.
+      </p>
+    </div>
+
   </div>
 
 </section>
+
+<!-- PREMIUM CTA SECTION -->
+<section class="mt-20 bg-white shadow-lg py-16">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold mb-4">Ready to Grow Your Brand?</h2>
+    <p class="text-lg opacity-80 mb-8">
+      Partner with Stackly and unlock world-class digital marketing that delivers measurable results.
+    </p>
+    <a href="packages.html" class="register-btn px-10 py-4 text-lg">
+      Explore Packages
+    </a>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer class="bg-[#060507] dark:bg-[#050406] text-gray-300 pt-10 pb-8">
